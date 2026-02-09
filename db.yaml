@@ -3,7 +3,7 @@ services:
     image: postgres:latest
     container_name: 68-s2-database
     ports: 
-      - 54324:5432
+      - ${DATABASE_PORT}:5432
     environment:
       POSTGRES_USER: ${DATABASE_USER}
       POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
